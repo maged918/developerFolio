@@ -20,6 +20,9 @@ export default function Blogs() {
           .join(" ")
       : NaN;
   }
+
+  let newBlogs = blogSection.blogs.copyWithin();
+
   useEffect(() => {
     if (blogSection.displayMediumBlogs === "true") {
       const getProfileData = () => {
@@ -31,6 +34,16 @@ export default function Blogs() {
           })
           .then(response => {
             setMediumBlogsFunction(response.items);
+            // response.items.forEach( (blog) => {
+            //   newBlogs = [...newBlogs,
+            //     {
+            //         url: blog.link,
+            //         title: blog.title,
+            //         description: extractTextContent(blog.content)
+            //       }
+            //     ];
+            //   });
+            //   console.log(newBlogs);
           })
           .catch(function (error) {
             console.error(
@@ -61,35 +74,37 @@ export default function Blogs() {
         </div>
         <div className="blog-main-div">
           <div className="blog-text-div">
-            {blogSection.displayMediumBlogs !== "true" ||
-            mediumBlogs === "Error"
-              ? blogSection.blogs.map((blog, i) => {
+            {
+              newBlogs.map((blog, i) => {
                   return (
                     <BlogCard
                       key={i}
                       isDark={isDark}
                       blog={{
                         url: blog.url,
-                        image: blog.image,
+                        // image: blog.image,
                         title: blog.title,
                         description: blog.description
                       }}
                     />
                   );
                 })
-              : mediumBlogs.map((blog, i) => {
-                  return (
-                    <BlogCard
-                      key={i}
-                      isDark={isDark}
-                      blog={{
-                        url: blog.link,
-                        title: blog.title,
-                        description: extractTextContent(blog.content)
-                      }}
-                    />
-                  );
-                })}
+              }
+            {
+              mediumBlogs.map((blog, i) => {
+                    return (
+                      <BlogCard
+                        key={i}
+                        isDark={isDark}
+                        blog={{
+                          url: blog.link,
+                          title: blog.title,
+                          description: extractTextContent(blog.content)
+                        }}
+                      />
+                    );
+                  })
+              }       
           </div>
         </div>
       </div>
