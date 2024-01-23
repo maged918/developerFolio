@@ -21,7 +21,7 @@ const illustration = {
 
 const greeting = {
   username: "Maged Shalaby",
-  title: "Hi all, I'm Maged.",
+  title: "Hi all, I'm Maged Shalaby.",
   subTitle: emoji(
     "A passionate Product Manager with a love for everything tech. Previous experience in Data & Software Engineering."
   ),
@@ -193,7 +193,40 @@ const workExperiences = {
         // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
-    }
+    },
+    {
+      role: "Lead Product Manager",
+      company: "Yassir",
+      companylogo: require("./assets/images/yassir.png"),
+      date: "Jul 2023 – Nov 2023",
+      desc: "Leading Super App in Africa",
+      descBullets: [
+        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ]
+    },
+    {
+      role: "Head of Product and Engineering",
+      company: "Preventia Technologies",
+      companylogo: require("./assets/images/preventia.jpg"),
+      date: "Dec 2019 – Jun 2023",
+      desc: "Intelligent Health-Tech Ecosystem",
+      descBullets: [
+        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ]
+    },
+    {
+      role: "Data Science Lead",
+      company: "dlc.",
+      companylogo: require("./assets/images/dlc.png"),
+      date: "Feb 2018 – Nov 2019",
+      desc: "Travel-Tech Redefined",
+      descBullets: [
+        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ]
+    }           
   ]
 };
 
