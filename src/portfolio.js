@@ -208,7 +208,7 @@ const workExperiences = {
     {
       role: "Head of Product and Engineering",
       company: "Preventia Technologies",
-      companylogo: require("./assets/images/preventia.jpg"),
+      companylogo: require("./assets/images/preventia.png"),
       date: "Dec 2019 – Jun 2023",
       desc: "Intelligent Health-Tech Ecosystem",
       descBullets: [
