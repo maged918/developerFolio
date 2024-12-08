@@ -160,7 +160,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Product Management", //Insert stack or technology you have experience in
@@ -184,22 +184,22 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Head of Product",
-      company: "Klivvr",
-      companylogo: require("./assets/images/klivvr.webp"),
-      date: "Dec 2023 – Present",
-      desc: "Rising FinTech in Egypt",
+      role: "Principal Product Manager",
+      company: "Mrsool",
+      companylogo: require("./assets/images/mrsool.png"),
+      date: "June 2024 – Present",
+      desc: "Food Delivery Giant",
       descBullets: [
         // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
     },
     {
-      role: "Lead Product Manager",
-      company: "Yassir",
-      companylogo: require("./assets/images/yassir.png"),
-      date: "Jul 2023 – Nov 2023",
-      desc: "Leading Super App in Africa",
+      role: "Head of Product",
+      company: "Klivvr",
+      companylogo: require("./assets/images/klivvr.webp"),
+      date: "September 2023 – June 2024",
+      desc: "Rising FinTech in Egypt",
       descBullets: [
         // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         // "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
@@ -209,7 +209,7 @@ const workExperiences = {
       role: "Head of Product and Engineering",
       company: "Preventia Technologies",
       companylogo: require("./assets/images/preventia.png"),
-      date: "Dec 2019 – Jun 2023",
+      date: "December 2019 – July 2023",
       desc: "Intelligent Health-Tech Ecosystem",
       descBullets: [
         // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -220,7 +220,7 @@ const workExperiences = {
       role: "Data Science Lead",
       company: "dlc.",
       companylogo: require("./assets/images/dlc.png"),
-      date: "Feb 2018 – Nov 2019",
+      date: "October 2016 – November 2019",
       desc: "Travel-Tech Redefined",
       descBullets: [
         // "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
