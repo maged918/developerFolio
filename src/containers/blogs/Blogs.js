@@ -35,16 +35,16 @@ export default function Blogs() {
           })
           .then(response => {
             setMediumBlogsFunction(response.items);
-            response.items.forEach( (blog) => {
-              newBlogs = [...newBlogs,
-                {
-                    url: blog.link,
-                    title: blog.title,
-                    description: extractTextContent(blog.content)
-                  }
-                ];
-              });
-              console.log(newBlogs);
+            // response.items.forEach( (blog) => {
+            //   newBlogs = [...newBlogs,
+            //     {
+            //         url: blog.link,
+            //         title: blog.title,
+            //         description: extractTextContent(blog.content)
+            //       }
+            //     ];
+            //   });
+            //   console.log(newBlogs);
           })
           .catch(function (error) {
             console.error(
